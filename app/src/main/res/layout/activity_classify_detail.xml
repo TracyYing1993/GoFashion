@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="demo.gofashion.com.org.activity.ClassifyDetailActivity">
+    <LinearLayout
+        android:id="@+id/detail_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/common_navi_mixblack"
+        android:layout_alignParentTop="true">
+        <ImageView
+            android:id="@+id/class_detail_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/common_navi_back"/>
+        <TextView
+            android:id="@+id/fl_search"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text=""
+            android:textColor="#fff"
+            />
+    </LinearLayout>
+    <android.support.design.widget.TabLayout
+        android:id="@+id/detail_tablayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:id="@+id/detail_fragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"/>
+
+
+
+
+</LinearLayout>

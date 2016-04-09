@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/action_dhfp"
+            android:icon="@mipmap/icon_dhfp"
+            android:title="兑换Go票" />
+        <item
+            android:id="@+id/action_fanpiao"
+            android:icon="@mipmap/ico_fanpiao"
+            android:title="我的Go票" />
+        <item
+            android:id="@+id/action_collect"
+            android:icon="@drawable/ico_collect"
+            android:title="收藏记录" />
+        <item android:id="@+id/action_other1"
+            android:title="特色服务"
+            android:checked="false" >
+            <menu>
+                <group android:checkableBehavior="single">
+                    <item android:id="@+id/action_scan"
+                        android:title="扫一扫"
+                        android:icon="@mipmap/ico_scan"/>
+                    <item android:id="@+id/action_ceyanzhi"
+                        android:title="测试值"
+                        android:icon="@mipmap/icon_ceyanzhi"/>
+                </group>
+            </menu>
+
+        </item>
+        <item android:id="@+id/action_other2"
+            android:title="其他操作"
+            android:checked="false" >
+            <menu>
+                <group android:checkableBehavior="single">
+                    <item android:id="@+id/action_bought"
+                        android:title="我的订单"
+                        android:icon="@mipmap/ico_bought"/>
+                    <item android:id="@+id/action_service"
+                        android:title="联系客服"
+                        android:icon="@mipmap/ico_service"/>
+                    <item android:id="@+id/action_info"
+                        android:title="版本信息"
+                        android:icon="@mipmap/abc_btn_radio_to_on_mtrl_015"/>
+                </group>
+            </menu>
+
+        </item>
+
+
+
+    </group>
+</menu>

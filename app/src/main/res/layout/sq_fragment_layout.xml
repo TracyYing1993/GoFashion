@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:id="@+id/sq_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/common_navi_mixblack"
+        android:layout_alignParentTop="true">
+        <ImageView
+            android:id="@+id/sq_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_arrow"/>
+        <android.support.design.widget.TabLayout
+            android:id="@+id/sq_tabLayout"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            app:tabTextColor="#668e8e8e"
+            app:tabSelectedTextColor="#fff"
+            app:tabIndicatorColor="#ff0"
+            app:tabIndicatorHeight="4dp"/>
+        <ImageView
+            android:id="@+id/sq_camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/btn_huaticamera_88"/>
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/sq_viewpager"
+        android:layout_below="@+id/sq_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</RelativeLayout>

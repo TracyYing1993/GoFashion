@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/splash_1">
+
+    <Button
+        android:id="@+id/welcome_skip"
+        android:layout_width="75dp"
+        android:layout_height="40dp"
+        android:background="@mipmap/splash_btn_skip"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"/>
+
+</RelativeLayout>

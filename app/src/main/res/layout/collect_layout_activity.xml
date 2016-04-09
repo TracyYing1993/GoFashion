@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/title_container_cllect"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/common_navi_mixblack"
+        android:gravity="center_vertical">
+
+        <Button
+            android:id="@+id/btn_back_cllect"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/common_navi_back"
+            android:onClick="clickButton" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="收藏记录列表"
+            android:textColor="#fff" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_record_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="共有0条收藏记录"
+        android:textColor="#000"
+        android:layout_marginTop="20dp"
+        android:textSize="19sp" />
+
+    <GridView
+        android:id="@+id/gridView_cllect"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="2"
+        android:background="#F2F2F2"/>
+
+    <TextView
+        android:id="@+id/text_empty_cllect"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="暂无收藏记录" />
+
+</LinearLayout>

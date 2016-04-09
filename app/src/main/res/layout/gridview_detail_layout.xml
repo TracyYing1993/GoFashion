@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#aaeeeeee"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_product_detail" />
+
+    <include layout="@layout/include_shopping_layout" />
+
+
+    <LinearLayout
+        android:id="@+id/lineBar_layout_container"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="#fff"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_share_detail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#e0e0e0"
+            android:onClick="clickButton"
+            android:text="分享" />
+
+        <Button
+            android:id="@+id/btn_collect_detail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#e0e0e0"
+            android:text="收藏" />
+
+        <Button
+            android:id="@+id/btn_shopping_detail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#e0e0e0"
+            android:onClick="clickButton"
+            android:text="购物袋" />
+
+        <Button
+            android:id="@+id/btn_add_shopping_detail"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="#444143"
+            android:onClick="clickButton"
+            android:text="加入购物袋"
+            android:textColor="#fff" />
+    </LinearLayout>
+
+</RelativeLayout>
